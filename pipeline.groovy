@@ -1,4 +1,4 @@
-import java.util.logging
+import java.util.logging.Logger
 import java.util.logging.ConsoleHandler
 import java.util.logging.FileHandler
 import java.util.logging.SimpleFormatter
@@ -22,7 +22,7 @@ node ('master') {
         handler.setFormatter(new SimpleFormatter());
         RunLogger.addHandler(handler)
 
-       Logger logger = Logger.getLogger(env.JOB_NAME) 
+        def logger = Logger.getLogger(env.JOB_NAME) 
         
         
     }
