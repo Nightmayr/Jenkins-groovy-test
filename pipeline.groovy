@@ -21,7 +21,7 @@ node ('master') {
         handler.setFormatter(new SimpleFormatter());
         RunLogger.addHandler(handler)
 
-
+       Logger logger = Logger.getLogger(env.JOB_NAME) 
         
         
     }
