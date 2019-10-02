@@ -63,6 +63,6 @@ node ('master') {
         sh vash // \"3\" bar
         echo 'It still requires escaping the escape but that is just bash being bash at that point'
         echo 'Slashy strings are the closest to raw shell input with Jenkins, although the non dollar variant seems to give an error but the dollar slash works fine'
-
+    }
 }
 
