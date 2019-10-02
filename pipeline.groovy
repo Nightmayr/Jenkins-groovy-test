@@ -33,7 +33,7 @@ node ('master') {
     
     }
 
-    stage('shell test 2){
+    stage('shell test 2'){
         echo 'Results included as an inline comment exactly how they are returned as of Jenkins 2.121, with $BUILD_NUMBER = 1'
         echo 'No quotes, pipeline command in single quotes'
         sh 'echo $BUILD_NUMBER' // 1
