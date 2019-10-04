@@ -30,4 +30,4 @@ node ('master') {
     stage('shell test'){
         sh "echo '$LATEST'"
     }
-
+}
